@@ -4,11 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import Field from './src/components/Field';
 import params from './src/params';
 
-export default class App extends Component () {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Display value={this.state.displayValue} />
         <StatusBar style="auto" />
         <Text style={styles.welcome}>Iniciando o Mines!</Text>
         <Text style={styles.instructions}> Tamanho da grade:
@@ -16,6 +15,11 @@ export default class App extends Component () {
         </Text>
 
         <Field />
+        <Field opened />
+        <Field opened nearMines={1} />
+        <Field opened nearMines={2} />
+        <Field opened nearMines={3} />
+        <Field opened nearMines={6} />
       </View>
       
     );

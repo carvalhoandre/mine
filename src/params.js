@@ -11,10 +11,9 @@ const params = {
         return Math.floor(width / this.blockSize)
     },
      gerRowsAmount() {
-         const totalHeight = Dimensions.get('window').height
-         const boardHeight = totalHeight * (1 - this.headerRatio)
-         return Math.floor(boardHeight / this.blockSize)
-
+        const totalHeight = Dimensions.get('window').height
+        const boardHeight = totalHeight * (1 - this.headerRatio)
+        return Math.floor(boardHeight / this.blockSize)
     },
 }
 

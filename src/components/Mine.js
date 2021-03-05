@@ -16,7 +16,7 @@ export default props => {
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        justify: 'center',
+        justifyContent: 'center',
     },
     coreMine: {
         height: 14,

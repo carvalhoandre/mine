@@ -99,6 +99,9 @@ const invertFlag = (board, row, column) => {
     const field = board = board[row] [column]
     field.flagged = !field.flagged
 }
+
+const flagsUSed = board => fields(board).filter(field => field.flagged).length
+
 export { 
     createMinedBoard,
     cloneBoard,
@@ -107,4 +110,5 @@ export {
     wonGame,
     showMines,
     invertFlag,
+    flagsUSed,
 }
